@@ -117,7 +117,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8 max-md:">
         {/* Stats */}
         <div className="stats stats-vertical lg:stats-horizontal shadow mb-8 w-full">
           <div className="stat">
