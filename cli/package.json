@@ -1,0 +1,19 @@
+{
+  "name": "tasktrackr-cli",
+  "version": "1.0.0",
+  "description": "TaskTrackr CLI - Simple Task Management",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "help": "node app.js help"
+  },
+  "dependencies": {
+    "uuid": "^11.1.0"
+  },
+  "bin": {
+    "tasktrackr": "./app.js"
+  },
+  "keywords": ["task", "todo", "cli", "management"],
+  "author": "TaskTrackr",
+  "license": "MIT"
+}
