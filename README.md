@@ -18,29 +18,6 @@ A modern task management application built with Next.js, featuring both a web in
 - 💾 JSON file storage
 - 🚀 Easy to use commands
 
-## Project Structure
-
-```
-task-traker/
-├── app/                    # Next.js app directory
-│   ├── api/               # API routes
-│   │   └── tasks/         # Task API endpoints
-│   ├── globals.css        # Global styles
-│   ├── layout.tsx         # Root layout
-│   └── page.tsx           # Home page
-├── cli/                   # CLI application
-│   ├── app.js            # CLI main file
-│   ├── package.json      # CLI dependencies
-│   └── tasks.json        # CLI task storage
-├── components/            # React components
-│   ├── TaskCard.tsx      # Individual task card
-│   └── AddTaskModal.tsx  # Add task modal
-├── data/                 # Data storage
-│   └── tasks.json        # Web app task storage
-├── types/                # TypeScript definitions
-│   └── task.ts           # Task interface
-└── README.md             # This file
-```
 
 ## Technology Stack
 
