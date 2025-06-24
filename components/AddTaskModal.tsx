@@ -33,10 +33,9 @@ export default function AddTaskModal({ isOpen, onClose, onAdd }: AddTaskModalPro
   };
 
   if (!isOpen) return null;
-
   return (
     <div className="modal modal-open">
-      <div className="modal-box">
+      <div className="modal-box w-11/12 max-w-md">
         <h3 className="font-bold text-lg mb-4">Add New Task</h3>
         
         <form onSubmit={handleSubmit}>
@@ -52,14 +51,13 @@ export default function AddTaskModal({ isOpen, onClose, onAdd }: AddTaskModalPro
               onChange={(e) => setTitle(e.target.value)}
               required
             />
-          </div>
-
+          </div>          
           <div className="form-control mb-6">
             <label className="label">
               <span className="label-text">Description</span>
             </label>
             <textarea
-              className="textarea textarea-bordered h-24"
+              className="textarea textarea-bordered h-24 w-full"
               placeholder="Enter task description..."
               value={description}
               onChange={(e) => setDescription(e.target.value)}
@@ -78,7 +76,7 @@ export default function AddTaskModal({ isOpen, onClose, onAdd }: AddTaskModalPro
             </button>
             <button
               type="submit"
-              className={`btn btn-primary ${isLoading ? 'loading' : ''}`}
+              className={`btn btn-primary ${isLoading ? 'btn-disabled' : ''}`}
               disabled={isLoading || !title.trim() || !description.trim()}
             >
               {isLoading ? 'Adding...' : 'Add Task'}
